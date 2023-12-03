@@ -1,0 +1,16 @@
+
+<h2>Countries</h2>
+
+<table>
+  <tr>
+    <th>Flag</th>
+    <th>Country</th>
+    <th>Capital</th>
+    <th>Population</th>
+  </tr>
+  <tr *ngFor="let c of country">
+    <td><img src="{{ c.flags.png }} " width="45" height="35"></td>
+    <td>{{ c.name.common }}</td>
+    <td>{{ c.capital }}</td>
+    <td>{{c.population}}</td>
+</tr>
