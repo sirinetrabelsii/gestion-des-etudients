@@ -1,4 +1,4 @@
-
+<!-- 
 <h2>Countries</h2>
 
 <table>
@@ -13,4 +13,50 @@
     <td>{{ c.name.common }}</td>
     <td>{{ c.capital }}</td>
     <td>{{c.population}}</td>
-</tr>
+</tr> -->
+
+<aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+  <div class="app-brand demo">
+    <a routerLink="" class="app-brand-link">
+      <span class=" demo menu-text fw-bolder ms-2" style="font-size: 30px;">Angular</span>
+    </a>
+
+    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+      <i class="bx bx-chevron-left bx-sm align-middle"></i>
+    </a>
+  </div>
+
+  <div class="menu-inner-shadow"></div>
+
+  <ul class="menu-inner py-1">
+    <!-- Dashboard -->
+    <li class="menu-item"  [ngClass]="{'active': activeRoute === ''}">
+      <a routerLink="" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-home-circle"></i>
+        <div data-i18n="Analytics">Dashboard</div>
+      </a>
+    </li>
+
+ 
+
+    <li class="menu-header small text-uppercase">
+      <span class="menu-header-text">Listes</span>
+    </li>
+
+    <li class="menu-item" [ngClass]="{'active': activeRoute === 'students'}">
+      <a routerLink="/students" class="menu-link" >
+        <i class="menu-icon tf-icons bx bx-table"></i>
+        <div data-i18n="Tables">Liste des étudients</div>
+      </a>
+    </li>
+
+    <!-- Tables -->
+    <li class="menu-item"  [ngClass]="{'active': activeRoute === 'teachers'}">
+      <a routerLink="/teachers" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-table"></i>
+        <div data-i18n="Tables">Liste des enseignants</div>
+      </a>
+    </li>
+  </ul>
+</aside>
+<router-outlet></router-outlet>
