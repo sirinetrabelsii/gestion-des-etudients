@@ -8,13 +8,15 @@ import { StudentsComponent } from './students/students.component';
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
 import { AddComponent } from './add/add.component';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentsComponent,
     FilterPipe,
-    AddComponent
+    AddComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

@@ -1,46 +1,41 @@
 {
   "etudiants": [
     {
-      "id": 1,      
-      "email": "trabelsii.sirine@gmail.com",
+      "nom": "Sirine TRABELSI",
+      "email": "trabelsii.sirine@tekab.dev",
       "phoneNumber": "21176888",
       "dateInscription": "2023-12-04T02:19:41.801Z",
-      "nom": "John Doe"
+      "id": 4,
+      "name": "sss"
     },
     {
-      "id": 2,      
-      "email": "trabelsii.sirine@gmail.com",
-      "phoneNumber": "21176888",
-      "dateInscription": "2023-12-04T02:19:41.801Z",
-      "nom": "Jane Smith"
+      "nom": "Rihab jdaida",
+      "email": "rihab.jdaida@ipsas.tn",
+      "phoneNumber": "212121211",
+      "dateInscription": "2023-12-04T18:06:35.294Z",
+      "id": 9,
+      "name": "ksskddd"
     },
     {
-      "id": 3,      
-      "email": "trabelsii.sirine@gmail.com",
-      "phoneNumber": "21176888",
-      "dateInscription": "2023-12-04T02:19:41.801Z",
-      "nom": "Bob Johnson"
+      "nom": "Zied BACHOUAL",
+      "email": "zied.bachoual@gmail.com",
+      "phoneNumber": "21212121",
+      "dateInscription": "2023-12-04T18:07:11.163Z",
+      "id": 10
     },
     {
-      "nom": "Sirine Trabelsi",
-      "email": "trabelsii.sirine@gmail.com",
-      "phoneNumber": "21176888",
-      "dateInscription": "2023-12-04T02:19:41.801Z",
-      "id": 4
+      "nom": "Marwa FAKHFAKH",
+      "email": "marwa.fakhfakh@ipsas.tn",
+      "phoneNumber": "21212121",
+      "dateInscription": "2023-12-04T19:20:39.558Z",
+      "id": 11
     },
     {
-      "nom": "Sirine Trabelsi",
-      "email": "trabelsii.sirine@gmail.com",
-      "phoneNumber": "21176888",
-      "dateInscription": "2023-12-04T02:19:41.801Z",
-      "id": 5
-    },
-    {
-      "nom": "Sirine Trabelsi",
-      "email": "trabelsii.sirine@gmail.com",
-      "phoneNumber": "21176888",
-      "dateInscription": "2023-12-04T02:19:41.801Z",
-      "id": 6
+      "nom": "Mohamed Fawzi ABDELLAOUI",
+      "email": "fawzi.abdellaoui@ipsas.tn",
+      "phoneNumber": "21221211221",
+      "dateInscription": "2023-12-04T19:21:35.670Z",
+      "id": 12
     }
   ]
 }

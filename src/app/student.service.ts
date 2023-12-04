@@ -21,13 +21,28 @@ export class StudentService {
   //     this.students.push(addedStudent);
   //   });
   // }
+  getStudentById(studentId: number): Observable<Student> {
+    const getUrl = `${this.apiUrl}/${studentId}`;
+    return this.http.get<Student>(getUrl);
+  }
   addStudent(studentData: any): void {
     this.http.post<Student>(this.apiUrl, studentData).subscribe((addedStudent) => {
       this.students.push(addedStudent);
       this.studentsSubject.next([...this.students]);
     });
   }
+  deleteStudent(studentId: number): void {
+    const deleteUrl = `${this.apiUrl}/${studentId}`;
     
+    this.http.delete(deleteUrl).subscribe(() => {
+      this.students = this.students.filter(student => student.id !== studentId);
+      this.studentsSubject.next([...this.students]);
+    });
+  }
+  updateStudent(studentId: number, updatedData: any): Observable<Student> {
+    const updateUrl = `${this.apiUrl}/${studentId}`;
+    return this.http.put<Student>(updateUrl, updatedData);
+  }
   getStudents(): void {
     this.http.get<any[]>(this.apiUrl).subscribe((data) => {
       this.students = data;

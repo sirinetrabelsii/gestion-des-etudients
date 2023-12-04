@@ -28,5 +28,11 @@ export class StudentsComponent implements OnInit{
   addStudent(): void {
     this.router.navigate(['/add']);
   }
+  deleteStudent(studentId: number): void {
+    this.studentService.deleteStudent(studentId);
+  }
+  editStudent(studentId: number): void {
+    this.router.navigate(['/edit', studentId]);
+  }
 
 }
