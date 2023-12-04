@@ -1,7 +1,46 @@
 {
-    "etudiants": [
-      {"id": 1, "nom": "John Doe"},
-      {"id": 2, "nom": "Jane Smith"},
-      {"id": 3, "nom": "Bob Johnson"}
-    ]
-  }
+  "etudiants": [
+    {
+      "id": 1,      
+      "email": "trabelsii.sirine@gmail.com",
+      "phoneNumber": "21176888",
+      "dateInscription": "2023-12-04T02:19:41.801Z",
+      "nom": "John Doe"
+    },
+    {
+      "id": 2,      
+      "email": "trabelsii.sirine@gmail.com",
+      "phoneNumber": "21176888",
+      "dateInscription": "2023-12-04T02:19:41.801Z",
+      "nom": "Jane Smith"
+    },
+    {
+      "id": 3,      
+      "email": "trabelsii.sirine@gmail.com",
+      "phoneNumber": "21176888",
+      "dateInscription": "2023-12-04T02:19:41.801Z",
+      "nom": "Bob Johnson"
+    },
+    {
+      "nom": "Sirine Trabelsi",
+      "email": "trabelsii.sirine@gmail.com",
+      "phoneNumber": "21176888",
+      "dateInscription": "2023-12-04T02:19:41.801Z",
+      "id": 4
+    },
+    {
+      "nom": "Sirine Trabelsi",
+      "email": "trabelsii.sirine@gmail.com",
+      "phoneNumber": "21176888",
+      "dateInscription": "2023-12-04T02:19:41.801Z",
+      "id": 5
+    },
+    {
+      "nom": "Sirine Trabelsi",
+      "email": "trabelsii.sirine@gmail.com",
+      "phoneNumber": "21176888",
+      "dateInscription": "2023-12-04T02:19:41.801Z",
+      "id": 6
+    }
+  ]
+}

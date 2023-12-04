@@ -7,17 +7,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { StudentsComponent } from './students/students.component';
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
+import { AddComponent } from './add/add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentsComponent,
-    FilterPipe
+    FilterPipe,
+    AddComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule, FormsModule 
+    HttpClientModule, FormsModule   
   ],
   providers: [],
   bootstrap: [AppComponent]

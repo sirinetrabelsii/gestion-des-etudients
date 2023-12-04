@@ -5,7 +5,7 @@
       <nav
       class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
       id="layout-navbar"
-    >
+     >
       <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
         <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
           <i class="bx bx-menu bx-sm"></i>
@@ -34,20 +34,30 @@
   
         
       </div>
-    </nav>
+     </nav>
     <div class="my-5" ></div> 
 
     <!-- Basic Bootstrap Table -->
       <div class="card">
-        <h5 class="card-header">Liste des étudients</h5>
+        <div class="row">
+            <h5 class="card-header col-sm-10">Liste des étudiants</h5>
+          
+            <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary" style="margin-top:12px ;width: fit-content; " (click)="addStudent()">Ajouter un étudient</button>
+            </div>
+          </div>
+          
+
+
+
         <div class="table-responsive text-nowrap">
           <table class="table">
             <thead>
               <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Class</th>
-                <th>Identity</th>
+                <th>Date d'inscription</th>
+                <th>Email</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -55,10 +65,8 @@
                 <tr *ngFor="let st of student | filter: searchText">
                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>{{st.id}}</td>
                 <td><strong>{{st.nom}}</strong></td>
-                <td>
-                 
-                </td>
-                <td><span class="badge bg-label-primary me-1">Active</span></td>
+                <td><i class="fab fa-angular fa-lg text-danger me-3"></i>{{st.dateInscription| date:'shortDate'}}</td>
+                <td><i class="fab fa-angular fa-lg text-danger me-3"></i>{{st.email}}</td>
                 <td>
                   <div class="dropdown">
                     <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
