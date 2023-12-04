@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
 import { AddComponent } from './add/add.component';
 import { EditComponent } from './edit/edit.component';
+import { TeachersComponent } from './teachers/teachers.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EditComponent } from './edit/edit.component';
     StudentsComponent,
     FilterPipe,
     AddComponent,
-    EditComponent
+    EditComponent,
+    TeachersComponent
   ],
   imports: [
     BrowserModule,
